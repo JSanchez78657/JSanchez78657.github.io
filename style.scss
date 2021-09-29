@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -256,8 +256,7 @@ nav {
   position: relative;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-columns: 1fr 1fr;
 }
 
 .wrapper-footer {
@@ -270,6 +269,12 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+@media (min-width: 360px) {
+  .blocks {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
