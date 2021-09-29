@@ -243,7 +243,11 @@ nav {
 
 .blocks > .block {
   grid-column: span 2;
-  grid-row: span 2;  
+  grid-row: span 4;
+  color: black;
+  border-style: solid;
+  border-width: 5px;
+  text-align: center;
 }
 
 .blocks {
