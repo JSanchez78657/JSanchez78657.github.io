@@ -258,6 +258,11 @@ nav {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  min-height: 100%;
 }
 
 .wrapper-footer {
@@ -268,8 +273,9 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
+  height: 50px;
   text-align: center;
+  margin-top: -50px;
 }
 
 @media (max-width: 360px) {
